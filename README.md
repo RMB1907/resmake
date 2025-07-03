@@ -26,7 +26,7 @@ ResMake is a mobile application that generates professional resumes using a pred
 6. Users may reset the form to begin a new resume
 
 **Diagram: System Workflow**
-
+![Workflow Diagram](workflow.png)
 
 ## Navigation Flow
 
@@ -40,6 +40,7 @@ The app follows a modular activity structure with intuitive navigation:
 6. **Clear Data**: Remove all stored inputs
 
 **Diagram: Navigation Flow**
+![Navigation Flow](navigation.png)
 
 ## Implementation
 
