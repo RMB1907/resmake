@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BEF8F2"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Personal Details -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewPersonalDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/black"
+            app:strokeWidth="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/h_personal_details"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <!-- Name -->
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/h_name"
+                    android:inputType="textPersonName" />
+
+                <!-- Title -->
+                <EditText
+                    android:id="@+id/etTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/h_title"
+                    android:inputType="text" />
+
+                <!-- Address -->
+                <EditText
+                    android:id="@+id/etAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/h_address"
+                    android:inputType="textPostalAddress" />
+
+                <!-- City -->
+                <EditText
+                    android:id="@+id/etCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/h_city"
+                    android:inputType="text" />
+
+                <!-- Country -->
+                <EditText
+                    android:id="@+id/etCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/h_country"
+                    android:inputType="text" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Contact Details -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewContacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardViewPersonalDetails">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/h_contact"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <!-- Phone -->
+                <EditText
+                    android:id="@+id/etPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/h_phone"
+                    android:inputType="phone" />
+
+                <!-- Email -->
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Education Details -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewEducation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardViewContacts">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/h_education"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <!-- Year-Year -->
+                <EditText
+                    android:id="@+id/etYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/h_year"
+                    android:inputType="text" />
+
+                <!-- Degree -->
+                <EditText
+                    android:id="@+id/etDegree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/h_degree"
+                    android:inputType="text" />
+
+                <!-- Institution -->
+                <EditText
+                    android:id="@+id/etInstitution"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/h_institution"
+                    android:inputType="text" />
+
+                <!-- Grade -->
+                <EditText
+                    android:id="@+id/etGrade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/h_grade"
+                    android:inputType="text" />
+
+                <!-- Education Description -->
+                <EditText
+                    android:id="@+id/etEduDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/h_description"
+                    android:inputType="text" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Experience Details -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewExperience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardViewEducation">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/h_experience"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <!-- Experience Year -->
+                <EditText
+                    android:id="@+id/etExpYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/h_exp_year"
+                    android:inputType="text" />
+
+                <!-- Job Title -->
+                <EditText
+                    android:id="@+id/etJobTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/h_job_title"
+                    android:inputType="text" />
+
+                <!-- Employer -->
+                <EditText
+                    android:id="@+id/etEmployer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/h_employer"
+                    android:inputType="text" />
+
+                <!-- City -->
+                <EditText
+                    android:id="@+id/etEmpCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/h_exp_city"
+                    android:inputType="text" />
+
+                <!-- Experience Description -->
+                <EditText
+                    android:id="@+id/etExpDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/h_exp_description"
+                    android:inputType="text" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Projects Details -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewProjects"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardViewExperience">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/h_projects"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <!-- Project 1 Title -->
+                <EditText
+                    android:id="@+id/etProject1Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/h_project2_title"
+                    android:inputType="text" />
+
+                <!-- Project 1 Description -->
+                <EditText
+                    android:id="@+id/etProject1Description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/h_project1_description"
+                    android:inputType="text" />
+
+                <!-- Project 2 Title -->
+                <EditText
+                    android:id="@+id/etProject2Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/h_project2_title"
+                    android:inputType="text" />
+
+                <!-- Project 2 Description -->
+                <EditText
+                    android:id="@+id/etProject2Description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/h_project2_description"
+                    android:inputType="text" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Skills Details -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewSkills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardViewProjects">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/h_skills"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <!-- Skill 1 Title -->
+                <EditText
+                    android:id="@+id/etSkill1Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/h_skill1_title"
+                    android:inputType="text" />
+
+                <!-- Skill 1 Description -->
+                <EditText
+                    android:id="@+id/etSkill1Description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/h_skill1_description"
+                    android:inputType="text" />
+
+                <!-- Skill 2 Title -->
+                <EditText
+                    android:id="@+id/etSkill2Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/h_skill2_title"
+                    android:inputType="text" />
+
+                <!-- Skill 2 Description -->
+                <EditText
+                    android:id="@+id/etSkill2Description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/h_skill2_description"
+                    android:inputType="text" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/btn__save"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardViewSkills" />
+
+        <!-- Space -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnSave" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+
+
+
+
+
+

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="heading_resmake">RESMAKE</string>
+    <string name="form"> FORM </string>
+    <string name="latex_code">LATEX CODE</string>
+    <string name="delete_text">CLEAR DATA</string>
+    <string name="print_text">OVERLEAF</string>
+    <string name="view_data">VIEW DATA</string>
+    <string name="login"> LOGIN </string>
+
+    <string name="resume_template">
+
+    \documentclass[11pt,a4paper,sans]{moderncv}
+
+    \moderncvstyle{casual}
+    \moderncvcolor{blue}
+
+    \name{\@NAME}{}
+    \title{\@TITLE}
+    \address{\@ADDRESS}{\@CITY}{\@COUNTRY}
+    \phone[mobile]{\@PHONE}
+    \email{\@EMAIL}
+
+    \begin{document}
+    \makecvtitle
+
+    \section{Education}
+    \cventry{\@EDU_YEAR}{\@DEGREE}{\@INSTITUTION}{\@CITY}{\textit{\@GRADE}}{\@EDU_DESCRIPTION}
+
+    \section{Experience}
+    \cventry{\@EXP_YEAR}{\@JOB_TITLE}{\@EMPLOYER}{\@CITY}{}{\@EXP_DESCRIPTION}
+
+    \section{Projects}
+    \cvitem{Project 1}{\@PROJECT1_DESCRIPTION}
+    \cvitem{Project 2}{\@PROJECT2_DESCRIPTION}
+
+    \section{Skills}
+    \cvitem{Skill 1}{\@SKILL1_DESCRIPTION}
+    \cvitem{Skill 2}{\@SKILL2_DESCRIPTION}
+
+    \end{document}
+
+</string>
+
+
+    <string name="app_name">ResMake</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_title">Title</string>
+    <string name="hint_exp_year">Experience Year</string>
+    <string name="hint_job_title">Job Title</string>
+    <string name="hint_employer">Employer</string>
+    <string name="hint_exp_city">City</string>
+    <string name="hint_exp_description">Experience Description</string>
+
+    <string name="hint_address">Address</string>
+    <string name="hint_city">City</string>
+    <string name="hint_country">Country</string>
+    <string name="hint_phone">Phone</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_year">Year-Year</string>
+    <string name="hint_institution">Institution</string>
+    <string name="hint_degree">Degree</string>
+    <string name="hint_grade">Grade</string>
+    <string name="hint_description">Description</string>
+    <string name="hint_project1_title">Project 1 Title</string>
+    <string name="hint_project1_description">Project 1 Description</string>
+    <string name="hint_project2_title">Project 2 Title</string>
+    <string name="hint_project2_description">Project 2 Description</string>
+    <string name="hint_skill1_title">Skill 1 Title</string>
+    <string name="hint_skill1_description">Skill 1 Description</string>
+    <string name="hint_skill2_title">Skill 2 Title</string>
+    <string name="hint_skill2_description">Skill 2 Description</string>
+    <string name="btn_save">Save</string>
+
+    <string name="copy_code">Copy Code</string>
+    <string name="print_display">PDF path will be displayed here</string>
+    <string name="click_me">CLICK TO VIEW FORM </string>
+    <string name="login_email">ENTER EMAIL</string>
+    <string name="login_password">ENTER PASSWORD</string>
+
+
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="toggle_to_register">Don\'t have an account? Register here</string>
+    <string name="toggle_to_login">Already have an account? Login here</string>
+    <string name="login_success">Login successful.</string>
+    <string name="login_failed">Authentication failed. Please try again.</string>
+    <string name="register_success">Registration successful.</string>
+    <string name="register_failed">Registration failed. Please try again.</string>
+    <string name="passwords_do_not_match">Passwords do not match.</string>
+
+    <string name="h_personal_details"> PERSONAL DETAILS </string>
+    <string name="h_contact"> CONTACT DETAILS </string>
+    <string name="h_education"> EDUCATION  </string>
+    <string name="h_experience"> EXPERIENCE </string>
+    <string name="h_projects"> PROJECTS </string>
+    <string name="h_skills"> SKILLS </string>
+
+    <string name="h_name">Name</string>
+    <string name="h_title">Title</string>
+    <string name="h_address">Address</string>
+    <string name="h_city">City</string>
+    <string name="h_country">Country</string>
+    <string name="h_phone">Phone</string>
+    <string name="h_email">Email</string>
+    <string name="h_year">Year</string>
+    <string name="h_degree">Degree</string>
+    <string name="h_institution">Institution</string>
+    <string name="h_grade">Grade</string>
+    <string name="h_description">Description</string>
+    <string name="h_exp_year">Experience Year</string>
+    <string name="h_job_title">Job Title</string>
+    <string name="h_employer">Employer</string>
+    <string name="h_exp_city">City</string>
+    <string name="h_exp_description">Experience Description</string>
+    <string name="h_project1_title">Project 1 Title</string>
+    <string name="h_project1_description">Project 1 Description</string>
+    <string name="h_project2_title">Project 2 Title</string>
+    <string name="h_project2_description">Project 2 Description</string>
+    <string name="h_skill1_title">Skill 1 Title</string>
+    <string name="h_skill1_description">Skill 1 Description</string>
+    <string name="h_skill2_title">Skill 2 Title</string>
+    <string name="h_skill2_description">Skill 2 Description</string>
+    <string name="btn__save">Save</string>
+    <string name="latex_code_heading">LaTeX</string>
+    <string name="your_form">FORM DETAILS</string>
+    <string name="no_data_to_display">No data to display</string>
+
+</resources>
