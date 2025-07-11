@@ -1,4 +1,4 @@
-# ResMake
+### ResMake
 
 **ResMake** is a mobile application that generates a professional resume using a predefined LaTeX template.
 
@@ -7,19 +7,19 @@
 -  Streamlines resume creation for users with no LaTeX experience 
 -  Offers seamless export to Overleaf for final formatting
 
-## Workflow  
+### Workflow  
 <img src="workflow.png" alt="Workflow Diagram" width="500"/>
 
-## App Navigation  
+### App Navigation  
 <img src="navigation.png" alt="Navigation Flow" width="500"/>
 
-## Stack
+### Stack
 
 - **Frontend**: Kotlin and XML  
 - **Database**: Room for local storage  
 - **Export**: Overleaf for LaTeX editing 
 
-## Acknowledgements
+### Acknowledgements
 
 Special thanks to [**Cyril Noah**](https://github.com/cyrilnoah1) for their helpful contributions to **ResMake**.
 
