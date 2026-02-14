@@ -16,7 +16,7 @@
 ### Stack
 
 - **Frontend**: XML
-- **Frontend**: Kotlin
+- **Backend**: Kotlin
 - **Database**: Room ORM Library
 
 ### Acknowledgements
