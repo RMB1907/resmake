@@ -3,7 +3,7 @@
 **ResMake** is a mobile application that generates a professional resume using a predefined LaTeX template.
 
 -  Allows users to input personal, educational, and professional details through a structured form-based UI
--  Dynamically maps user input to LaTeX code using Room database for persistent storage
+-  Maps user input to LaTeX code using Room database for persistent storage
 -  Streamlines resume creation for users with no LaTeX experience 
 -  Offers seamless export to Overleaf for final formatting
 
@@ -15,9 +15,9 @@
 
 ### Stack
 
-- **Frontend**: Kotlin and XML  
-- **Database**: Room for local storage  
-- **Export**: Overleaf for LaTeX editing 
+- **Frontend**: XML
+- **Frontend**: Kotlin
+- **Database**: Room ORM Library
 
 ### Acknowledgements
 
